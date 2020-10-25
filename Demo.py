@@ -28,9 +28,9 @@ def pro():
 
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login('abdulahadnizamaniiq@gmail.com', "rkstcdqrknmnevtb")
+    s.login('senders email', "password")
     text = msg.as_string()
-    s.sendmail('abdulahadnizamaniiq@gmail.com', 'mohsinnizamanitq@gmail.com', text)
+    s.sendmail('sender', 'receiver', text)
     s.quit
     print('Success')
 pro()
